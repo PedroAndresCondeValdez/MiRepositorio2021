@@ -3,3 +3,4 @@ RewriteRule ^professor/?$ professor_controller.php [NC,L]
 RewriteRule ^professor/([0-9]+)/?$ professor_controller.php?id=$1 [NC,L]
 RewriteRule ^professor1/?$ professor_route.php [NC,L]
 RewriteRule ^professor1/([0-9]+)/?$ professor_route.php?id=$1 [NC,L]
+//aqui se modifica en .htacces para llamar a los metodos professor_controller y professor_route con los URLS dados
