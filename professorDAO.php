@@ -1,6 +1,6 @@
 <?php
     require 'dbutil.php';
-    require 'student.php';
+    require 'professor.php';
 
     /**
      * ProfessorDAO
