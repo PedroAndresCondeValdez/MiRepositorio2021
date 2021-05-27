@@ -19,6 +19,9 @@
             $this->lastName = $lastName;
             $this->city = $city;
         }
+        /**
+         * con sus respectivos GET; SET; del ID, FirstName ,LastName y City
+         */
 
         public function getId() {
             return $this->id;
