@@ -28,10 +28,16 @@ Route::get('/customers', 'App\Http\Controllers\CustomerController@getCustomers')
 Route::get('/newcustomer', 'App\Http\Controllers\CustomerController@showNewCustomer')->middleware('auth');
 Route::post('/customers', 'App\Http\Controllers\CustomerController@postCustomer')->middleware('auth');
 
+
+
+
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'getProducts'])->middleware('auth');
 Route::get('/products', [App\Http\Controllers\ProductController::class, 'getProductsAll'])->middleware('auth');
 Route::get('/newproduct', [App\Http\Controllers\ProductController::class, 'showNewProduct'])->middleware('auth');
 Route::post('/products', [App\Http\Controllers\ProductController::class, 'postProduct'])->middleware('auth');
+
+
+
 
 
 Route::get('/ajaxcustomerlist', [App\Http\Controllers\AjaxCustomerController::class, 'showCustomerList'])->middleware('auth')->name('ajaxcustomerslist');
