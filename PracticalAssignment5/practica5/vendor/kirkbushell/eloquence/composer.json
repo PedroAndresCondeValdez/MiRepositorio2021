@@ -1,0 +1,33 @@
+{
+    "name": "kirkbushell/eloquence",
+    "description": "A set of extensions adding additional functionality and consistency to Laravel's awesome Eloquent library.",
+    "keywords": ["laravel", "eloquent", "camelcase", "camel", "case", "snake_case", "snake"],
+    "authors": [
+        {
+            "name": "Kirk Bushell",
+            "email": "torm3nt@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3",
+        "hashids/hashids": "^1.0",
+        "illuminate/database": "~8.0",
+        "illuminate/support": "~8.0",
+        "ramsey/uuid": "^4",
+        "hanneskod/classtools": "~1.0"
+    },
+    "require-dev": {
+        "illuminate/events": "~8.0",
+        "mockery/mockery": "^1.3.0",
+        "orchestra/testbench": "~6",
+        "phpunit/phpunit": "~8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Eloquence\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
